@@ -22,7 +22,6 @@ while True:
         print('Не верный ввод')
 
 print(usrList)
-#usrList = [1, 'in', True, 3.5, [55, 'out'], 'Om', 'Shanti', 'goods', 'perfekt']
 for i in range(1, len(usrList), 2):
     a = usrList[i - 1]
     b = usrList[i]
@@ -31,3 +30,21 @@ for i in range(1, len(usrList), 2):
     usrList.pop(i)
     usrList.insert(i, a)
 print(usrList)
+
+
+#вариант учителя
+# usrList = list(input('Enter numbers without space -  '))
+# print(usrList)
+# for i in range(1, len(usrList), 2):
+#     usrList[i - 1], usrList[i] = usrList[i], usrList[i-1]
+# print(usrList)
+
+#еще вариант учителя
+
+# usrList = input('Enter numbers without space -  ').split()
+# print(usrList)
+# for i in range(1, len(usrList), 2):
+#     usrList.insert(i - 1, usrList.pop(i))
+# print(usrList)
+
+#Не сработало....

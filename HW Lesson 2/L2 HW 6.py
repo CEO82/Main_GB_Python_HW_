@@ -20,25 +20,20 @@
 # “ед”: [“шт.”]
 # }
 
+# For Taecher: 6-е задание доделал после просмотра начала 3-го урока (в записи), до этого пытался научиться
+# создавать автоматически прерменные что бы каждый новый словарь был в отдельной переменной, но
+# у меня не получилось...) Прошу сильно ен пинать))) Остальные задания сделал без подсказки)
+
 print('Вас приветсвует складская программа \nПо запросу программы вводите требуемые значения ')
-name = 'Наименование'
-price = 'Цена'
-quantity = 'Колличество'
-statmentName = 'Введите наименование товар: '
-statmentPrice = 'Введите цену товара в рублях: '
-statmentQuantity = 'Введите количество товара: '
 
-names = ['Наименование', 'Цена', 'Колличество']
-statments = ['Введите наименование товара: ', 'Введите цену товара в рублях: ', 'Введите количество товара: ']
+names = ['Наименование', 'Цена', 'Колличество', 'еденицы']
+statments = ['Введите наименование товара: ', 'Введите цену товара в рублях: ', 'Введите количество товара: ', 'введите единицы измерения колличестваб шт, упак, короб: ']
 
-
+goodsList = []
 n = 1
-nForDict = 1
 while True:
     qest1 = input('Если вы хотите ввести данные товара нажмите д - да, \nесли вы хотите завершить ввод данных нажмите н - нет \nваш выбор: ')
     if qest1 == 'д':
-        print('yes')
-
         tupleX = []
         dictForTuple = {}
         for i in range(len(names)):
@@ -48,16 +43,31 @@ while True:
         tupleX.append(dictForTuple)
         n += 1
         tupleX = tuple(tupleX)
-        print(tupleX)
-
-
-
-
-
+        goodsList.append(tupleX)
 
 
     elif qest1 == 'н':
-        print('no')
+        # print('no')
         break
     else:
         print('Wrong chois')
+print(goodsList)
+
+nameList = []
+priceList = []
+qantityList = []
+unitsList = []
+for i in goodsList:
+    curentDict = i[1]
+    nameList.append(i[1][names[0]])
+    priceList.append(i[1][names[1]])
+    qantityList.append(i[1][names[2]])
+    unitsList.append(i[1][names[3]])
+
+analiticDict = {}
+analiticDict[names[0]] = nameList
+analiticDict[names[1]] = priceList
+analiticDict[names[2]] = qantityList
+analiticDict[names[3]] = unitsList
+
+print(analiticDict)

@@ -5,9 +5,7 @@
 # а указать явно, в программе.
 
 dataList = [1, 3.5, ['in', 'out'], {'age': 38, 'sex': 'male'}, (1, 2, 3, 'Hadgehog'), 'Rabbit', None, True, False]
-position = 0
-for elemType in (dataList):
-    print(f'В индексе {position} тип данных = {type(elemType)}',)
-    position += 1
-#print(len(dataList))
+for index, item in enumerate(dataList):
+    print(f'В индексе {index} тип данных = {type(item)}',)
+
 

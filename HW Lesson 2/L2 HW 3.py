@@ -26,15 +26,18 @@ yearTimesDict = {'Январь': 'Зимнй',
              'Сентябрь': 'Осенний',
              'Октябрь': 'Осенний',
              'Ноябрь': 'Осенний',
-             'Декабрь': 'Зимнй',
+             'Декабрь': 'Зимний',
              }
 
 monthList = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
 yearTimesList = ['Зима', 'Весна', 'Лето', 'Осень']
-usrMonth = int(input('Введите номер календарного месяца от 1 до 12: '))
-while usrMonth < 1 or usrMonth > 12:
+usrMonth = input('Введите номер календарного месяца от 1 до 12: ')
+usrMonth.isdigit()
+print(usrMonth.isdigit())
+while usrMonth.isdigit() == False or 1 > int(usrMonth) or int(usrMonth) > 12:
     print('Вы ввели не правильное число, попробуйте еще раз')
-    usrMonth = int(input('Введите номер календарного месяца от 1 до 12: '))
+    usrMonth = input('Введите номер календарного месяца от 1 до 12: ')
+usrMonth = int(usrMonth)
 print(' ')
 print(f'Вы выбрали {monthDict[usrMonth]} это {yearTimesDict[monthDict[usrMonth]]} месяц')
 print(' ')
@@ -48,3 +51,8 @@ else:
     season = yearTimesList[0]
 
 print(f'{season} это время года для месяца {monthList[usrMonth - 1]}')
+
+
+# Вариант учителя через if in
+# if usrMonth in monthDict:
+#     print(...)
