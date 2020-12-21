@@ -17,10 +17,16 @@ def user_info_input(**kwargs):
         print('В полях год рождения и № телефона вы ввели не верные данные! \nПожалуйста повторите ввод, год содержит 4 цыфры, № телефона 11 цыфр')
         check = False
         return check
-    print(kwargs)
+    print(f'Введены следующие данные пользователя: {kwargs}')
 
 
-questUserInfo = ['Введите ваше имя: ', 'Введите вашу фамилию: ', 'Введите год вашего рождения: ', 'Введите город вашего проживания: ', 'Введите вашу элю почту: ', 'Введите ваш № телефон, без знака + и скобок в формате 89********: ']
+usrName = 'Введите ваше имя: '
+usrSurName = 'Введите вашу фамилию: '
+usrBirthYear = 'Введите год вашего рождения: '
+usrSity = 'Введите город вашего проживания: '
+usrEmail = 'Введите вашу эл. почту: '
+usrPhone = 'Введите ваш № телефон, без знака + и скобок в формате 89********: '
+
 
 while True:
     a = user_info_input(name=input(usrName), surName=input(usrSurName), birthYear=input(usrBirthYear), sity=input(usrSity), email=input(usrEmail), phone=input(usrPhone))
