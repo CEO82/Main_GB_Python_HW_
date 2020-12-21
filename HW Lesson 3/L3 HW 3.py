@@ -18,5 +18,5 @@ def my_func(a, b, c):
     return mx + mx2
 
 
-usrMax = my_func(input('Введите элемент a: '), input('Введите элемент b: '), input('Введите элемент c: '),)
+usrMax = my_func(input('Введите элемент a: '), input('Введите элемент b: '), input('Введите элемент c: '))
 print(usrMax)
