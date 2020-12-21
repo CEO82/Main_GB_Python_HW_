@@ -8,22 +8,15 @@
 
 
 def my_exponentiation(x, y):
-    answ = x**y
+    a = x
+    for i in range(y - 1):
+        a = a * x
+    answ = 1 / a
     return  answ
 
 
-while True:
-    num_1 = float(input('Введите число основание: '))
-    num_2 = float(input('Введите только орицательное число для возведения в эту степень: '))
-
-    if num_1 != abs(num_1):
-        print('Вы ввели отрицательное основание, а нужно ввести положительное, повторите ввод')
-    elif num_2 == abs(num_2):
-        print('Вы ввели положительную степень, а нужно ввести отрицательную, повторите ввод')
-    else:
-        break
-print(f'Возведение будет производится в степень {round(num_2)}')
-
-answ = my_exponentiation(num_1, round(num_2))
+num_1 = float(input('Введите положительное число основание: '))
+num_2 = float(input('Введите число для возведения в степень \nВозведение будет производится в отрицательную степень: '))
+print(f'Возведение будет производится в степень -{round(num_2)}')
+answ = my_exponentiation(abs(num_1), round(abs(num_2)))
 print(f'Результат возведения в отрицательную степень: {answ}')
-
