@@ -6,3 +6,40 @@
 # чисел, то вначале нужно добавить сумму этих чисел к полученной ранее сумме и после этого
 # завершить программу.
 
+specialSymbol = '~'
+
+"""Данная функция для проверки число ли введенный символ?"""
+def isfloat(value):
+    try:
+        float(value)
+        return True
+    except ValueError:
+        return False
+
+
+"""Данная функция для подсчета суммы чисел в строке и определения спец символа выхода из программы"""
+def evaluating(usrStr):
+    usrList = usrStr.split()
+    locCount = 0
+    for i in usrList:
+        if isfloat(i) == True:
+            locCount = locCount + float(i)
+    print(locCount)
+    if specialSymbol in usrList:
+        return 1, locCount
+    else:
+        return 0, locCount
+
+
+summ = float(0)
+while True:
+    count = evaluating(input('Введите числа и сомволы через пробел \nДля завершения программы введите в строку символ ~ : '))
+    summ = summ + count[1]
+    print(f'сумма текущей строки = {count[1]} общая сумма = {summ}')
+    if count[0] == 1:
+        break
+
+print('Программа завершена, в строке обнаружен Стоп символ')
+
+
+
