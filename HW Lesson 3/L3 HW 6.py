@@ -11,16 +11,21 @@ testStr = 'mama Rama мыла Раmu miloM utrom 1515 utr155'
 
 def text_konverter(usrStr):
     usrList = usrStr.split()
+    konvertedList = []
     for word in usrList:
         count = 0
         for simbol in word:
-
             lenth = len(word)
             if 97 <= ord(simbol) <= 122:
                 count += 1
-                # print(simbol)
         if lenth == count:
-            print(word)
+            word = word.title()
+            konvertedList.append(word)
+    print(konvertedList)
+    konvertedStr = ' '.join(konvertedList)
+    print(konvertedStr)
+
+
 
 
 
