@@ -6,6 +6,7 @@
 # вывод исходной строки, но каждое слово должно начинаться с заглавной буквы. Необходимо
 # использовать написанную ранее функцию int_func() .
 
+"""перемнная для подстановки проверочной строки, для отладки ;)"""
 testStr = 'mama Rama мыла Раmu miloM utrom 1515 utr155'
 
 
@@ -15,20 +16,16 @@ def text_konverter(usrStr):
     for word in usrList:
         count = 0
         for simbol in word:
-            lenth = len(word)
             if 97 <= ord(simbol) <= 122:
                 count += 1
-        if lenth == count:
+        if len(word) == count:
             word = word.title()
             konvertedList.append(word)
-    print(konvertedList)
     konvertedStr = ' '.join(konvertedList)
     print(konvertedStr)
 
 
-
-
-
-
-
-a = text_konverter(testStr)
+print('Введите строку со словами маленькими латинскими буквами! \nчерез пробел! \nДругие символы будут проигнорированы программой при обработке')
+usrInput = input('Введите слова через пробел!: ')
+"""Для использования проверочной строки вставить в скобки testStr """
+a = text_konverter(usrInput)
