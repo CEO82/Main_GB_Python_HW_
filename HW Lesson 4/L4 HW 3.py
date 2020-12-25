@@ -2,5 +2,5 @@
 # Необходимо решить задание в одну строку.
 # Подсказка: использовать функцию range() и генератор.
 
-genList = [n for n in range(20,240) if n % 21 == 0]
+genList = [n for n in range(20,241) if n % 20 == 0]
 print(genList)

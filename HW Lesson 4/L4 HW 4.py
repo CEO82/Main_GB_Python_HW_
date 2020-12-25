@@ -6,3 +6,7 @@
 # Результат: [23, 1, 3, 10, 4, 11]
 
 
+testList = [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11, 5, 777, 56, 5]
+
+konvertedList = [n for n in testList if testList.count(n) == 1]
+print(konvertedList)
