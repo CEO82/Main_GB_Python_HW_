@@ -46,4 +46,4 @@ def salary(inputList):
 
 
 employeeSalary = salary(argv)
-print(f'{employeeSalary}.руб ')
+print(f'Зароботная плата сотрудника составляет: {employeeSalary}.руб ')
