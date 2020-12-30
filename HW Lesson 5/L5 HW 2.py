@@ -19,3 +19,4 @@ for num, i in enumerate(lines, 1):
 
 strCount = content.count('\n')
 print(f'Всего в файле {strCount} заполненных строк')
+print(lines)
