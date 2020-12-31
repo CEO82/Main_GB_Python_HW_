@@ -17,4 +17,6 @@ with open('Rnd_numb_out1.txt', 'r', encoding='utf-8') as usrFileNumbKonv:
     fileList = fileContent.split()
     sumary = reduce(lambda x,y: int(x) + int(y), fileList)
 
-    print(sumary)
+print(sumary)
+print(genList)
+
