@@ -12,6 +12,8 @@
 # [{ "firm_1" : 5000 , "firm_2" : 3000 , "firm_3" : 1000 }, { "average_profit" : 2000 }]
 # Подсказка: использовать менеджер контекста.
 
+import json
+
 sum = 0
 firmProfitDict = {}
 averageProfitDict = {}
@@ -29,7 +31,7 @@ with open('Firm_HW_7.txt', 'r', encoding='utf-8') as usrFileFirmProfit:
 
 averageProfitDict['Средний доход на компанию с положительным сальдо'] = round(sum / positiveProfitIndex)
 
+forJson = [firmProfitDict, averageProfitDict]
 
-print(fileContent)
-print(firmProfitDict)
-print(averageProfitDict)
+with open('firm_profit_Js.json', 'w', encoding='utf-8') as forJsonWrite:
+    json.dump(forJson, forJsonWrite, ensure_ascii = False)
