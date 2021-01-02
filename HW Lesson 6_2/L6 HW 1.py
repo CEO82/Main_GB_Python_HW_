@@ -15,8 +15,7 @@ import time
 
 class TraficLight:
     # атрибуты класса:
-    _traficColor = ['Red', 'Yelow', 'Green']
-    switchTime = {'Red': 7, 'Yelow': 2, 'Green': 15}
+    _traficColor = {'Red': 7, 'Yelow': 2, 'Green': 15}
 
 
     # Конструктор с атрибутами объекта:
@@ -28,10 +27,7 @@ class TraficLight:
         while True:
             for i in TraficLight._traficColor:
                 print(i)
-                time.sleep(TraficLight.switchTime[i])
-
-
-
+                time.sleep(TraficLight._traficColor[i])
 
 
 
