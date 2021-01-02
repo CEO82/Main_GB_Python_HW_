@@ -8,4 +8,30 @@
 # ● проверить работу метода.
 # Например: 20 м*5000 м*25 кг*5 см = 12500 т.
 
+#  согласно формуле вес 1м2 тощиной 1 см = 25кг.
+
+class Road:
+    # атрибуты класса:
+    __asphaltWeight = 25 #согласно формуле вес 1м2 асфальта тощиной 1 см = 25кг
+
+
+    # Конструктор с атрибутами объекта:
+    def __init__(self, length, width, thickness):
+        self.__l = length
+        self.__w = width
+        self.__t = thickness
+        self.weightCalculation()
+
+
+    # методы класса:
+    def weightCalculation(self):
+        # print(self.__l, self.__w, self.__t)
+        usrAsphWeight = (self.__l * self.__w * self.__t * self.__asphaltWeight) / 1000
+        print(f'вес асфальта для дороги {usrAsphWeight} тонн')
+
+
+    # Объект класса:
+
+road1_M4_Don = Road(float(input('Введите длину дороги в м: ')), float(input('Введите ширину дороги в м: ')), float(input('Введите толщину покрытия в см: ')),)
+# print(Road.usrAsphWeight)
 
