@@ -5,23 +5,41 @@
 # зелёный;
 # ● продолжительность первого состояния (красный) составляет 7 секунд, второго
 # (жёлтый) — 2 секунды, третьего (зелёный) — на ваше усмотрение;
-# # класс Bus, наследующий Transport
-# class Bus (Transport):
-# def show_info (self):
-# print( "Родительский метод класса Bus" )
-# t = Transport()
-# t.show_info()
-# a = Auto()
-# a.show_info()
-# b = Bus()
-# b.show_info()
-# Родительский метод класса Transport
-# Родительский метод класса Auto
-# Родительский метод класса Bus
 # ● переключение между режимами должно осуществляться только в указанном порядке
 # (красный, жёлтый, зелёный);
 # ● проверить работу примера, создав экземпляр и вызвав описанный метод.
 # Задачу можно усложнить, реализовав проверку порядка режимов. При его нарушении
 # выводить соответствующее сообщение и завершать скрипт.
 
+import time
+
+class TraficLight:
+    # атрибуты класса:
+    _traficColor = ['Red', 'Yelow', 'Green']
+    switchTime = {'Red': 7, 'Yelow': 2, 'Green': 15}
+
+
+    # Конструктор с атрибутами объекта:
+
+
+    # методы класса:
+    def running(self):
+        print('On')
+        while True:
+            for i in TraficLight._traficColor:
+                print(i)
+                time.sleep(TraficLight.switchTime[i])
+
+
+
+
+
+
+# Объект
+traficLightOnTverskaya = TraficLight()
+traficLightOnTverskaya.running()
+
+
+# print(traficLightOnTverskaya._traficColor)
+# print(type(traficLightOnTverskaya._traficColor))
 
