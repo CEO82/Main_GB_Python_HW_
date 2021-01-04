@@ -16,14 +16,12 @@
 class Car:
     # атрибуты класса:
 
-
     # Конструктор с атрибутами объекта:
     def __init__(self, speed , color, model, is_police):
         self.spd = speed
         self.col = color
         self.md = model
         self.plc = is_police
-
 
     # методы класса:
     def show_speed(self):
@@ -45,8 +43,6 @@ class Car:
         print('Через 300 метров перверните на право')
 
 
-# Объект
-
 class TownCar(Car):
 
     # атрибуты класса:
@@ -61,25 +57,11 @@ class TownCar(Car):
             print(f'Ваша скорость {self.spd} км/ч')
 
 
-# Объект
-
 class SportCar(Car):
     pass
 
-# атрибуты класса:
-
-# Конструктор с атрибутами объекта:
-
-# методы класса:
-
-# Объект
 
 class WorkCar(Car):
-    # pass
-
-# атрибуты класса:
-
-# Конструктор с атрибутами объекта:
 
 # методы класса:
     def show_speed(self):
@@ -88,24 +70,17 @@ class WorkCar(Car):
         else:
             print(f'Ваша скорость {self.spd} км/ч')
 
-# Объект
-
 class PoliceCar(Car):
     pass
 
-# атрибуты класса:
 
-# Конструктор с атрибутами объекта:
-
-# методы класса:
-
-# Объект
 dodgeViper = SportCar(280, 'Black', 'Viper', False)
 dodgeViper.go()
 dodgeViper.show_speed()
 dodgeViper.turn()
 dodgeViper.stop()
 print()
+
 solaris = TownCar(100, 'Silver', 'Solaris', False)
 solaris.go()
 solaris.show_speed()
