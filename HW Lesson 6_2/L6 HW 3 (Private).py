@@ -18,16 +18,12 @@ class Worker:
         self.nam = name
         self.sur = surname
         self.pos = position
-        self._inc = {'wage': float(salary), 'bonus': float(bonus)}
+        self.__inc = {'wage': float(salary), 'bonus': float(bonus)}
+        self.salaryDic = self.__inc
+
 
     # методы класса:
-    # def get_full_name(self):
-    #     fulName = self.nam + ' ' + self.sur
-    #     print(f'Имя и Фамилия сторудника: {fulName}')
-    #
-    # def get_total_income(self):
-    #     salary = self._inc['wage'] + self._inc['bonus']
-    #     print(f'Полный доход сотрудника составляет {salary} рублей')
+
 
     # Объект класса:
 
@@ -41,11 +37,11 @@ class Position(Worker):
         print(f'Имя и Фамилия сторудника: {fulName}')
 
     def get_total_income(self):
-        salary = self._inc['wage'] + self._inc['bonus']
+        salary = self.salaryDic['wage'] + self.salaryDic['bonus']
         print(f'Полный доход сотрудника составляет {salary} рублей')
 
 
 # Объект класса:
-worker1 = Position(input('Введите имя: '), input('Введите имя: '), input('Введите должность: '), input('Введите оклад в рублях: '), input('Введите размер бонуса в рублях: '),)
+worker1 = Position(input('Введите имя: '), input('Введите фамилию: '), input('Введите должность: '), input('Введите оклад в рублях: '), input('Введите размер бонуса в рублях: '),)
 worker1.get_full_name()
 worker1.get_total_income()

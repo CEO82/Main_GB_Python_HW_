@@ -46,6 +46,6 @@ class Position(Worker):
 
 
 # Объект класса:
-worker1 = Position(input('Введите имя: '), input('Введите имя: '), input('Введите должность: '), input('Введите оклад в рублях: '), input('Введите размер бонуса в рублях: '),)
+worker1 = Position(input('Введите имя: '), input('Введите фамилию: '), input('Введите должность: '), input('Введите оклад в рублях: '), input('Введите размер бонуса в рублях: '),)
 worker1.get_full_name()
 worker1.get_total_income()

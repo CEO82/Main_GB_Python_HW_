@@ -20,7 +20,7 @@ class Road:
         self.__l = length
         self.__w = width
         self.__t = thickness
-        self.weightCalculation()
+        # self.weightCalculation()
 
 
     # методы класса:
@@ -32,6 +32,6 @@ class Road:
     # Объект класса:
 
 road1_M4_Don = Road(float(input('Введите длину дороги в м: ')), float(input('Введите ширину дороги в м: ')), float(input('Введите толщину покрытия в см: ')),)
-# road1_M4_Don.weightCalculation()
-# print(Road.usrAsphWeight)
+road1_M4_Don.weightCalculation()
+
 
