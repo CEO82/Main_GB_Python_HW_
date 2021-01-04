@@ -35,12 +35,12 @@ class Car:
 
     def stop(self):
         if self.plc == False:
-            print(f'Автомобиль {self.md} в остановился')
+            print(f'Автомобиль {self.md} остановился')
         else:
-            print(f'Автомобиль {self.md} в остановился! Спец сигналы выключены! Погоня завершена!')
+            print(f'Автомобиль {self.md} остановился! Спец сигналы выключены! Погоня завершена!')
 
     def turn(self):
-        print('Через 300 метров перверните на право')
+        print('Через 300 метров поверните направо')
 
 
 class TownCar(Car):
@@ -52,7 +52,7 @@ class TownCar(Car):
     # методы класса:
     def show_speed(self):
         if float(self.spd) > 60:
-            print(f'Вы превысили скрость на {float(self.spd) - 60} км/ч! Снизте скорости до 60 км/ч!')
+            print(f'Вы превысили скорость на {float(self.spd) - 60} км/ч! Снизьте скорость до 60 км/ч!')
         else:
             print(f'Ваша скорость {self.spd} км/ч')
 
@@ -66,7 +66,7 @@ class WorkCar(Car):
 # методы класса:
     def show_speed(self):
         if float(self.spd) > 40:
-            print(f'Вы превысили скрость на {float(self.spd) - 40} км/ч! Снизте скорости до 40 км/ч!')
+            print(f'Вы превысили скорость на {float(self.spd) - 40} км/ч! Снизьте скорость до 40 км/ч!')
         else:
             print(f'Ваша скорость {self.spd} км/ч')
 

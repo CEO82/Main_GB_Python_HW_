@@ -35,7 +35,3 @@ class TraficLight:
 traficLightOnTverskaya = TraficLight()
 traficLightOnTverskaya.running()
 
-
-# print(traficLightOnTverskaya._traficColor)
-# print(type(traficLightOnTverskaya._traficColor))
-

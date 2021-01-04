@@ -19,8 +19,6 @@ class Worker:
         self.sur = surname
         self.pos = position
         self.__inc = {'wage': float(salary), 'bonus': float(bonus)}
-        self.salaryDic = self.__inc
-
 
     # методы класса:
 
@@ -37,7 +35,7 @@ class Position(Worker):
         print(f'Имя и Фамилия сторудника: {fulName}')
 
     def get_total_income(self):
-        salary = self.salaryDic['wage'] + self.salaryDic['bonus']
+        salary = self._Worker__inc['wage'] + self._Worker__inc['bonus']
         print(f'Полный доход сотрудника составляет {salary} рублей')
 
 
