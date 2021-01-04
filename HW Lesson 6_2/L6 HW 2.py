@@ -25,7 +25,6 @@ class Road:
 
     # методы класса:
     def weightCalculation(self):
-        # print(self.__l, self.__w, self.__t)
         usrAsphWeight = (self.__l * self.__w * self.__t * self.__asphaltWeight) / 1000
         print(f'вес асфальта для дороги {usrAsphWeight} тонн')
 
@@ -33,5 +32,6 @@ class Road:
     # Объект класса:
 
 road1_M4_Don = Road(float(input('Введите длину дороги в м: ')), float(input('Введите ширину дороги в м: ')), float(input('Введите толщину покрытия в см: ')),)
+# road1_M4_Don.weightCalculation()
 # print(Road.usrAsphWeight)
 
