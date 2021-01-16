@@ -18,9 +18,10 @@ class MatrixEv:
     def __init__(self, matr):
         self.matr = matr
 
+
     # методы класса:
     def __str__(self):
-        return 'Матрица:\n' + '\n'.join('\t'.join(map(str, line)) for line in self.matr)
+        return f'Матрица:\n' + '\n'.join('\t'.join(map(str, line)) for line in self.matr) + '\n'
 
 
     def __add__(self, other):
@@ -28,17 +29,25 @@ class MatrixEv:
         for i in range(len(self.matr)):
             for j in range(len(self.matr[0])):
                 res[i][j] = self.matr[i][j] + other.matr[i][j]
-        return 'Сумма матриц:\n' + '\n'.join('\t'.join(map(str, line)) for line in res)
+        return MatrixEv(res)
 
 # Объект класса:
 
 matrA = MatrixEv([[3, 2, 5], [4, 7, 8], [15, 11, 31] ])
 matrB = MatrixEv([[1, 4, 7], [11, 54, 6], [3, 7, 5]])
+matrC = MatrixEv([[3, 4, 10], [15, 51, 68], [31, 17, 52]])
+matrD = MatrixEv([[31, 54, 110], [1, 5, 7], [4, 5, 33]])
 
 print(matrA)
 print(matrB)
-
-matrC = matrA + matrB
-
 print(matrC)
+print(matrD)
 
+matrSum = matrA + matrB + matrC + matrD
+print()
+print(matrSum)
+
+print()
+print(matrSum + matrB)
+
+# 'Сумма матриц:\n' + '\n'.join('\t'.join(map(str, line)) for line in res)
