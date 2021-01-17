@@ -9,38 +9,44 @@
 # знания: реализовать абстрактные классы для основных классов проекта, проверить на
 # практике работу декоратора @property .
 
+# For Teacher: Добрый день! К сожалению не додумал как из класса выводить персонализовано по объектам
+# название конкретного изделия поэтому незвания зашил в одном общем принте в самом конце, после объектов класса
+# как пойму как это можно сделать более правильно исправлю код;)
+
 from abc import ABC, abstractmethod
 
 class Clothes(ABC):
 
     # атрибуты класса:
+
     # Конструктор с атрибутами объекта:
+    def __init__(self, size, growth):
+        self.s = size
+        self.growth = growth
+
     # методы класса:
     @abstractmethod
     def fabricCalc(self):
         pass
 
+
+
 class Coat(Clothes):
-    pass
+
     # атрибуты класса:
     # Конструктор с атрибутами объекта:
-    def __init__(self, size):
-        self.s = size
-
     # методы класса:
     @property
     def fabricCalc(self,):
-        textile = float(self.s) / 6.5 + 0.5
-        return f"Требуемое кол-во ткани для Пальто: {textile:.02f}"
+        textileCoat = float(self.s) / 6.5 + 0.5
+        textileCoat is globals()
+        return textileCoat
+        # return f"Требуемое кол-во ткани для Пальто: {textileCoat:.02f}"
 
 class Suit(Clothes):
-    pass
+
     # атрибуты класса:
-
     # Конструктор с атрибутами объекта:
-    def __init__(self, growth):
-        self.growth = growth
-
     # методы класса:
     @property
     def growth(self):
@@ -57,13 +63,20 @@ class Suit(Clothes):
 
     @property
     def fabricCalc(self):
-        textile = float(self.growth) * 2 + 0.3
-        return f"Требуемое кол-во ткани для Костюма: {textile:.02f}"
+        textileSuit = float(self.growth) * 2 + 0.3
+        textileSuit is globals()
+        return textileSuit
+
 
 # Объект класса:
 
-versachiCoat = Coat(90)
-bossSuit = Suit(155)
+versachiCoat = Coat(90, 154)
+bossSuit = Suit(70, 190)
+aVerText = versachiCoat.fabricCalc
+bBosTExt = bossSuit.fabricCalc
+totalText = aVerText + bBosTExt
 
-print(versachiCoat.fabricCalc)
-print(bossSuit.fabricCalc)
+print(f'Для производства Пальто потребуется {aVerText:.02f}m ткани,\nДля производства костюма {bBosTExt:.02f}m ткани,\nВсего нужно будет {totalText:.02f}m ткани')
+
+
+
