@@ -16,7 +16,6 @@ class Date:
         self.d = day
         self.m = mounth
         self.y = year
-    #     TODO: Add somethings
 
     # методы класса:
     @classmethod
