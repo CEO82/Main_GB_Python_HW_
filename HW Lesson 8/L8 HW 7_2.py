@@ -4,30 +4,26 @@
 # выполните сложение и умножение созданных экземпляров. Проверьте корректность
 # полученного результата.
 
-# For Taecher: Сделал и через переменную complex и просто передачей отдельных аргументов (см файл L8 HW 7_2)
 
 class ComplexNumbers:
     pass
     # атрибуты класса:
     # Конструктор с атрибутами объекта:
-    def __init__(self, arg):
-        self.arg = arg
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
     # методы класса:
     def __add__(self, other):
-        return f'Результат сложения комплексного числа: {self.arg + other.arg}\n'
+        return f'Результат сложения комплексного числа: ({(self.x + other.x)} + {(self.y + other.y)}j)\n'
 
     def __mul__(self, other):
-        return f'Результат умножения комплексного числа: {self.arg * other.arg}\n'
-
-
+        return f'Результат умножения комплексного числа: ({(self.x * other.x) - (self.y * other.y)} + {(self.y * other.x) + (self.x * other.y)}j)\n'
 
 # Объект класса:
 
-x = complex(10, 8)
-y = complex(7, 10)
-
-xC = ComplexNumbers(x)
-yC = ComplexNumbers(y)
+xC = ComplexNumbers(10, 8)
+yC = ComplexNumbers(7, 10)
 
 print(xC + yC)
 print(xC * yC)
