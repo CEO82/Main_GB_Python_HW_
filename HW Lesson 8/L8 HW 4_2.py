@@ -21,46 +21,64 @@
     # методы класса:
 # Объект класса:
 
+"""Через этот класс обрабатывается ввод типов оборудования"""
+class ElectronicItems:
+
+    # атрибуты класса:
+    # Конструктор с атрибутами объекта:
+    def __init__(self, brand, model, color, paperType, price):
+        self._brand = brand
+        self._model = model
+        self._color = color
+        self._paperType = paperType
+        self._price = price
+    # методы класса:
+# Объект класса:
+
+@property
+def brand(self):
+    return self._brand
+
+class Printers(ElectronicItems):
+    # атрибуты класса:
+    # Конструктор с атрибутами объекта:
+    def __init__(self, brand, model, color, paperType, price, printingType):
+        ElectronicItems().__init__(brand, model, color, paperType, price)
+        self.printingType = printingType
+    # методы класса:
+# Объект класса:
+
+class Scaner(ElectronicItems):
+    # атрибуты класса:
+    # Конструктор с атрибутами объекта:
+    def __init__(self, brand, model, color, paperType, price, resolution):
+        ElectronicItems().__init__(brand, model, color, paperType, price)
+        self.resolution = resolution
+    # методы класса:
+# Объект класса:
+
+class Scaner(ElectronicItems):
+    # атрибуты класса:
+    # Конструктор с атрибутами объекта:
+    def __init__(self, brand, model, color, paperType, price, resolution):
+        ElectronicItems().__init__(brand, model, color, paperType, price)
+        self.resolution = resolution
+    # методы класса:
+# Объект класса:
 
 
+class Monitor(ElectronicItems):
+    # атрибуты класса:
+    # Конструктор с атрибутами объекта:
+    def __init__(self, brand, model, color, paperType, price, resolution):
+        ElectronicItems().__init__(brand, model, color, paperType, price)
+        self.resolution = resolution
+    # методы класса:
+# Объект класса:
 
-class ElectronicsWarehouse:
-    pass
+
+class Storage:
     # атрибуты класса:
     # Конструктор с атрибутами объекта:
     # методы класса:
 # Объект класса:
-
-class Actions(ElectronicsWarehouse):
-    pass
-# TODO
-    # атрибуты класса:
-    # Конструктор с атрибутами объекта:
-    # методы класса:
-# Объект класса:
-
-class GetItem(Actions):
-    pass
-# TODO
-    # атрибуты класса:
-    # Конструктор с атрибутами объекта:
-    # методы класса:
-# Объект класса:
-
-class KeepItem(Actions):
-    pass
-# TODO
-    # атрибуты класса:
-    # Конструктор с атрибутами объекта:
-    # методы класса:
-# Объект класса:
-
-class TakeOutItem(Actions):
-    pass
-# TODO
-    # атрибуты класса:
-    # Конструктор с атрибутами объекта:
-    # методы класса:
-# Объект класса:
-
-

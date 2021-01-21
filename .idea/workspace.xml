@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66628d36-010e-459f-9770-0e860e94799e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HW Lesson 8/L8 HW 4_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW Lesson 8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HW Lesson 8/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW Lesson 8/L8 HW 4.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW Lesson 8/L8 HW 4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,10 +194,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1610990830382">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1611174474225">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1610990830382" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611174474225" />
     <state width="1344" height="174" key="GridCell.Tab.0.bottom" timestamp="1611003000737">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
