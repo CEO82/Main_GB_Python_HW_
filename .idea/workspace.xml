@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66628d36-010e-459f-9770-0e860e94799e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HW Lesson 8/L8 HW 4_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW Lesson 8/L8 HW 4_3_Actions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW Lesson 8/L8 HW 4_3_Items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW Lesson 8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HW Lesson 8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW Lesson 8/L8 HW 4.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW Lesson 8/L8 HW 4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW Lesson 8/L8 HW 4_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW Lesson 8/L8 HW 4_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,49 +54,7 @@
       <recent name="C:\Users\Root\Documents\GeekBrains Study\Python\Python Main\Main Python HW\Main_GB_Python_HW_\HW Lesson 8" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.L8 HW 7">
-    <configuration name="L2 HW 6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Main_GB_Python_HW_" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW Lesson 2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW Lesson 2/L2 HW 6.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="L8 HW 1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Main_GB_Python_HW_" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW Lesson 8" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW Lesson 8/L8 HW 1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.L8 HW 4_3_Items">
     <configuration name="L8 HW 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Main_GB_Python_HW_" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,6 +97,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="L8 HW 4_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Main_GB_Python_HW_" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW Lesson 8" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW Lesson 8/L8 HW 4_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="L8 HW 4_3_Items" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Main_GB_Python_HW_" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HW Lesson 8" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW Lesson 8/L8 HW 4_3_Items.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="L8 HW 7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Main_GB_Python_HW_" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.L8 HW 4_3_Items" />
+        <item itemvalue="Python.L8 HW 4_2" />
         <item itemvalue="Python.L8 HW 7" />
         <item itemvalue="Python.L8 HW 3" />
         <item itemvalue="Python.L8 HW 2" />
-        <item itemvalue="Python.L8 HW 1" />
-        <item itemvalue="Python.L2 HW 6" />
       </list>
     </recent_temporary>
   </component>
@@ -198,22 +198,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611174474225" />
-    <state width="1344" height="174" key="GridCell.Tab.0.bottom" timestamp="1611003000737">
+    <state width="1344" height="119" key="GridCell.Tab.0.bottom" timestamp="1611311167301">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611003000737" />
-    <state width="1344" height="174" key="GridCell.Tab.0.center" timestamp="1611003000736">
+    <state width="1344" height="119" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611311167301" />
+    <state width="1344" height="119" key="GridCell.Tab.0.center" timestamp="1611311167301">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611003000736" />
-    <state width="1344" height="174" key="GridCell.Tab.0.left" timestamp="1611003000736">
+    <state width="1344" height="119" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611311167301" />
+    <state width="1344" height="119" key="GridCell.Tab.0.left" timestamp="1611311167301">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611003000736" />
-    <state width="1344" height="174" key="GridCell.Tab.0.right" timestamp="1611003000737">
+    <state width="1344" height="119" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611311167301" />
+    <state width="1344" height="119" key="GridCell.Tab.0.right" timestamp="1611311167301">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611003000737" />
+    <state width="1344" height="119" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611311167301" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1610991571990">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
